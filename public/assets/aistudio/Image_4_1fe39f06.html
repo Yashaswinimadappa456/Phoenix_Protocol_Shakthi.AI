@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>HeraCare AI</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:max(env(safe-area-inset-bottom,0px),0.75rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#ffffff", "on-primary-container": "#fffbff", "on-surface-variant": "#5b4041", "tertiary-fixed-dim": "#89ceff", "on-primary-fixed-variant": "#92002a", "on-error-container": "#93000a", "on-surface": "#0b1c30", "on-secondary": "#ffffff", "secondary-fixed-dim": "#4edea3", "outline": "#8f6f71", "on-tertiary-container": "#fcfcff", "inverse-surface": "#213145", "on-tertiary": "#ffffff", "tertiary-fixed": "#c9e6ff", "primary": "#b90538", "surface-container-high": "#dce9ff", "on-secondary-fixed-variant": "#005236", "outline-variant": "#e3bdbf", "surface-bright": "#f8f9ff", "on-secondary-fixed": "#002113", "secondary": "#006c49", "surface-container-low": "#eff4ff", "on-error": "#ffffff", "on-primary": "#ffffff", "surface-tint": "#bc0b3b", "secondary-fixed": "#6ffbbe", "error": "#ba1a1a", "on-primary-fixed": "#40000d", "background": "#f8f9ff", "primary-fixed-dim": "#ffb2b7", "secondary-container": "#6cf8bb", "surface-variant": "#d3e4fe", "surface": "#f8f9ff", "error-container": "#ffdad6", "primary-container": "#dc2c4f", "on-tertiary-fixed": "#001e2f", "surface-dim": "#cbdbf5", "inverse-primary": "#ffb2b7", "surface-container-highest": "#d3e4fe", "on-secondary-container": "#00714d", "tertiary-container": "#007cb1", "on-background": "#0b1c30", "tertiary": "#00628d", "primary-fixed": "#ffdadb", "on-tertiary-fixed-variant": "#004c6e", "inverse-on-surface": "#eaf1ff", "surface-container": "#e5eeff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "gutter-desktop": "2rem", "space-xl": "2.5rem", "margin-tablet": "2rem", "gutter": "1rem", "margin-desktop": "3rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "1rem", "gutter-tablet": "1.5rem", "space-lg": "1.5rem" }, fontFamily: { "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, fontSize: { "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,28,48,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="HeraCare AI Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1WjOzP52nv4zVqce05RAHz5gRfDeQ7TXWJBpYKUk9lDJQmB63f-GfJvXZbEvAEpSnqg55s0EcGU25iotIy1oFyR5suv1kxmXz5Z4TNcQAZn7saDvQ1BoYk28zEsUw7WC45hGuNr0e4bZ5C3AQDcLxjHWiOMzSkoSAmDxTXkA5zdkVofkUANeRJiq062v6Sltl_MOR17TH2zg1W5dq1LCU5AL9ZAh8wyvdcoFpJVtCxSUWxAnhxQOEgsLf9z"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">HeraCare AI</span><span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-[10px] font-semibold leading-none">ABDM</span></div><span class="font-title-md text-title-md text-on-surface truncate">Lifespan Dashboard</span></div></div><div class="flex items-center gap-space-sm shrink-0"><a aria-label="Emergency SOS Call 108" class="h-10 px-3 bg-error text-on-error rounded-full flex items-center justify-center gap-1 shadow-[0_4px_12px_rgba(186,26,26,0.25)] active:scale-95 transition-transform" href="tel:108"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span class="font-label-md text-label-md font-bold">108 SOS</span></a><div class="relative flex items-center justify-center p-0.5 rounded-full bg-surface-container-high"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWItI3uxOIDrcLAQHSRi3i1C8FVv4EIPrTGlUtJNiykAdRGZ931OnsuAqBLuYdxmKfsWohybWTi5SV7URcEgWzQQl3h9B1Bvh-EjSOdI4CJZmpdDecGvqCo9xACmeKdH-17e-Hk-q6wIBk18huB7dmB6ehLXtgPNiMgLc1zKZlvoBPqqT4O-eVZb48SYORDza_QDq1iNrYZ-CehLgA1Kn4EnyupQnsvJJTOsNbVy1csALr_-7HlxWmQ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface"></span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Multilingual & Location Quick Bar -->
+<section class="px-margin pt-3 pb-2 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between gap-space-sm">
+<!-- Multilingual Selector Pill -->
+<div class="relative shrink-0">
+<button class="h-9 px-3 rounded-full bg-surface-container-low text-on-surface flex items-center gap-1.5 shadow-sm active:scale-95 transition-all text-left" id="langMenuBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">translate</span>
+<span class="font-label-md text-label-md font-semibold" id="currentLangText">English (EN)</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+<!-- Dropdown Dialog Popover -->
+<div class="hidden absolute left-0 top-11 z-40 w-52 p-1.5 rounded-xl bg-surface-container-lowest shadow-xl flex-col gap-1 transition-all" id="langDropdown">
+<button class="w-full px-3 py-2 rounded-lg text-left font-label-md text-label-md hover:bg-surface-container-low flex items-center justify-between font-semibold text-primary" onclick="selectLanguage('English (EN)', 'EN')" type="button">
+<span>English (EN)</span>
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<button class="w-full px-3 py-2 rounded-lg text-left font-label-md text-label-md hover:bg-surface-container-low flex items-center justify-between text-on-surface" onclick="selectLanguage('हिंदी (Hindi)', 'HI')" type="button">
+<span>हिंदी (Hindi)</span>
+</button>
+<button class="w-full px-3 py-2 rounded-lg text-left font-label-md text-label-md hover:bg-surface-container-low flex items-center justify-between text-on-surface" onclick="selectLanguage('தமிழ் (Tamil)', 'TA')" type="button">
+<span>தமிழ் (Tamil)</span>
+</button>
+<button class="w-full px-3 py-2 rounded-lg text-left font-label-md text-label-md hover:bg-surface-container-low flex items-center justify-between text-on-surface" onclick="selectLanguage('తెలుగు (Telugu)', 'TE')" type="button">
+<span>తెలుగు (Telugu)</span>
+</button>
+<button class="w-full px-3 py-2 rounded-lg text-left font-label-md text-label-md hover:bg-surface-container-low flex items-center justify-between text-on-surface" onclick="selectLanguage('ಕನ್ನಡ (Kannada)', 'KN')" type="button">
+<span>ಕನ್ನಡ (Kannada)</span>
+</button>
+<button class="w-full px-3 py-2 rounded-lg text-left font-label-md text-label-md hover:bg-surface-container-low flex items-center justify-between text-on-surface" onclick="selectLanguage('മലയാളം (Malayalam)', 'ML')" type="button">
+<span>മലയാളം (Malayalam)</span>
+</button>
+</div>
+</div>
+<!-- Quick ABDM ID Sync Token -->
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/30 text-on-secondary-container">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-sm text-label-sm font-semibold truncate">ABHA: 91-4428-****</span>
+</div>
+</div>
+<!-- Nearby Maternity & Emergency Centers Accordion -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="w-full px-3.5 py-2.5 flex items-center justify-between text-left hover:bg-surface-container-low/50" id="hospToggleBtn" type="button">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">local_hospital</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md font-semibold text-on-surface truncate">Mallya Maternity &amp; KC General Nearby</p>
+<p class="font-label-sm text-label-sm text-secondary font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+              24/7 NICU &amp; Labor Beds Available
+            </p>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform" id="hospChevron">expand_more</span>
+</button>
+<!-- Accordion Expandable List -->
+<div class="hidden px-3.5 pb-3 pt-1 flex flex-col gap-2 bg-surface-container-lowest" id="hospContent">
+<!-- Hospital Item 1 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between gap-2">
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface truncate">Mallya Maternity Hospital</span>
+<span class="px-1.5 py-0.2 rounded text-[10px] font-bold bg-secondary/15 text-secondary">NABH</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">near_me</span> 1.8 km away • 4 Maternity suites free
+            </p>
+</div>
+<a class="h-8 px-2.5 rounded-full bg-primary text-on-primary flex items-center gap-1 shrink-0 font-label-sm text-label-sm font-semibold active:scale-95 shadow-sm" href="tel:08022277979">
+<span class="material-symbols-outlined text-[14px]">call</span> Call
+          </a>
+</div>
+<!-- Hospital Item 2 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between gap-2">
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface truncate">KC General Hospital</span>
+<span class="px-1.5 py-0.2 rounded text-[10px] font-bold bg-error-container text-on-error-container">Govt / ABDM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">emergency</span> 3.2 km • Level-III NICU • 8 beds
+            </p>
+</div>
+<a class="h-8 px-2.5 rounded-full bg-surface-container-high text-on-surface flex items-center gap-1 shrink-0 font-label-sm text-label-sm font-semibold active:scale-95" href="tel:08023341771">
+<span class="material-symbols-outlined text-[14px]">call</span> Call
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Lifespan Stages Carousel Tabs -->
+<section class="mt-2">
+<div class="px-margin flex items-center justify-between">
+<h2 class="font-title-md text-title-md text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+        Lifespan Care Spectrum
+      </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tap to explore</span>
+</div>
+<!-- Tab Buttons Horizontal Scroll -->
+<div class="flex items-center gap-2 px-margin mt-2.5 overflow-x-auto pb-2 scrollbar-none snap-x">
+<button class="stage-tab-btn snap-start px-3.5 py-2 rounded-full font-label-md text-label-md font-semibold whitespace-nowrap bg-primary text-on-primary shadow-sm flex items-center gap-1.5 transition-all" onclick="switchStage('stage-preg', this)" type="button">
+<span>🤰 Pregnancy Care</span>
+</button>
+<button class="stage-tab-btn snap-start px-3.5 py-2 rounded-full font-label-md text-label-md font-medium whitespace-nowrap bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm flex items-center gap-1.5 transition-all" onclick="switchStage('stage-periods', this)" type="button">
+<span>🌸 Periods &amp; Hormones</span>
+</button>
+<button class="stage-tab-btn snap-start px-3.5 py-2 rounded-full font-label-md text-label-md font-medium whitespace-nowrap bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm flex items-center gap-1.5 transition-all" onclick="switchStage('stage-postpartum', this)" type="button">
+<span>👶 Postpartum &amp; Recovery</span>
+</button>
+<button class="stage-tab-btn snap-start px-3.5 py-2 rounded-full font-label-md text-label-md font-medium whitespace-nowrap bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm flex items-center gap-1.5 transition-all" onclick="switchStage('stage-vitality', this)" type="button">
+<span>🌿 Ongoing Vitality</span>
+</button>
+</div>
+</section>
+<!-- STAGE 1: PREGNANCY CARE (DEFAULT ACTIVE) -->
+<div class="stage-panel flex flex-col gap-space-md px-margin mt-2" id="stage-preg">
+<!-- Featured Maternal Card with Attached Image -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-md overflow-hidden relative">
+<div class="relative w-full h-44 overflow-hidden bg-surface-container-high">
+<img alt="Expecting mother cradling baby bump in soft warm light" class="w-full h-full object-cover object-center" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<!-- Floating Gradient Scrim & Week Badge -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/85 via-on-surface/20 to-transparent flex flex-col justify-end p-4">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold tracking-wide shadow-sm">
+              Week 26 • Trimester 2
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold">
+              98 Days to EDD
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary-container mt-1">Baby is the size of an Eggplant 🍆</h3>
+</div>
+</div>
+<!-- Trimester Daily Action Center -->
+<div class="p-4 flex flex-col gap-3">
+<!-- Medical Advice Callout -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">tips_and_updates</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md font-bold text-on-surface">Trimester 2 Essential Insight</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Auditory senses are now active. Listen to calming music, ensure adequate calcium intake, and practice lateral left-side resting.
+            </p>
+</div>
+</div>
+<!-- Kick Counter & Vitals Row -->
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Kick Counter Card -->
+<div class="p-3 rounded-xl bg-primary-fixed/25 flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-primary-fixed-variant font-bold uppercase tracking-wider">Baby Kicks</span>
+<span class="material-symbols-outlined text-primary text-[18px]">footprint</span>
+</div>
+<div class="my-2">
+<span class="font-display-lg-mobile text-display-lg-mobile font-bold text-primary" id="kickDisplay">8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant"> / 10 target</span>
+</div>
+<button class="w-full h-8 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold flex items-center justify-center gap-1 active:scale-95 shadow-sm transition-transform" onclick="incrementKicks()" type="button">
+<span class="material-symbols-outlined text-[16px]">add_circle</span> Tap Kick
+            </button>
+</div>
+<!-- Hydration Tracker -->
+<div class="p-3 rounded-xl bg-surface-container-high/40 flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Water Intake</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">water_drop</span>
+</div>
+<div class="my-2">
+<span class="font-display-lg-mobile text-display-lg-mobile font-bold text-tertiary" id="waterCount">2.1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant"> / 3.0 Liters</span>
+</div>
+<button class="w-full h-8 rounded-lg bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold flex items-center justify-center gap-1 active:scale-95 shadow-sm transition-transform" onclick="logWaterGlass()" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span> +250 ml Glass
+            </button>
+</div>
+</div>
+<!-- Iron & Folic Acid Tablet Reminder -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">medication</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<p class="font-title-md text-title-md text-on-surface truncate">Iron + Folic Acid (IFA)</p>
+<span class="px-1.5 py-0.2 rounded-full bg-secondary/15 text-secondary font-label-sm text-[10px] font-bold">Daily PM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Recommended after dinner with lemon water</p>
+</div>
+</div>
+<button class="h-9 px-3 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1 shrink-0 active:scale-95 shadow-sm" id="doseCheckBtn" onclick="toggleDose()" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span id="doseText">Mark Taken</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- STAGE 2: PERIODS & HORMONES (HIDDEN INITIALLY) -->
+<div class="stage-panel hidden flex flex-col gap-space-md px-margin mt-2" id="stage-periods">
+<!-- Cycle Overview Hero Card -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-md flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+</span>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Cycle Day 14</h3>
+<p class="font-label-sm text-label-sm text-primary font-bold">Fertile Window • High Ovulation Chance</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+          Regular 28-day
+        </span>
+</div>
+<!-- Menstrual Cycle Visual Slider Graphic -->
+<div class="w-full bg-surface-container-low p-3 rounded-xl flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Day 1: Menstruation</span>
+<span class="font-bold text-primary">Day 14: Ovulation</span>
+<span>Day 28: Luteal</span>
+</div>
+<!-- Simplified Progress Bar -->
+<div class="w-full h-3 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="w-[20%] bg-primary-container h-full"></div>
+<div class="w-[30%] bg-primary-fixed-dim h-full"></div>
+<div class="w-[10%] bg-primary h-full"></div>
+<div class="w-[40%] bg-surface-container-high h-full"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Next expected period in <strong class="text-on-surface">14 days</strong> (April 28th).
+        </p>
+</div>
+<!-- PCOS & Hormonal Guidance -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">PCOS &amp; Hormonal Balance Plan</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Spearmint infusion + Inositol support recommended during the follicular transition. Reduce glycemic spikes post-breakfast.
+        </p>
+<div class="flex gap-2 mt-1">
+<button class="flex-1 h-9 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-sm flex items-center justify-center gap-1 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span> Log Symptoms
+          </button>
+<button class="flex-1 h-9 rounded-lg bg-surface-container-lowest text-secondary font-label-sm text-label-sm font-semibold shadow-sm flex items-center justify-center gap-1 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[16px]">restaurant</span> Diet Guide
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- STAGE 3: POSTPARTUM & RECOVERY (HIDDEN INITIALLY) -->
+<div class="stage-panel hidden flex flex-col gap-space-md px-margin mt-2" id="stage-postpartum">
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-md flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+            The 4th Trimester
+          </span>
+<h3 class="font-title-lg text-title-lg text-on-surface mt-1">Postpartum Healing &amp; Latch</h3>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">child_care</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Gentle restorative care honoring the traditional 40-day jaapa recovery combined with clinical pelvic floor physiotherapy.
+      </p>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">self_improvement</span>
+<span class="font-label-md text-label-md font-bold">Pelvic Floor</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant my-1.5">5-min gentle Kegel flow to restore perineal tone.</p>
+<button class="w-full h-8 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold shadow-sm active:scale-95" type="button">
+            Start Guided
+          </button>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[18px]">baby_changing_station</span>
+<span class="font-label-md text-label-md font-bold">Lactation Video</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant my-1.5">Deep latch positioning &amp; engorgement relief.</p>
+<button class="w-full h-8 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold shadow-sm active:scale-95" type="button">
+            Watch Assist
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- STAGE 4: ONGOING VITALITY (HIDDEN INITIALLY) -->
+<div class="stage-panel hidden flex flex-col gap-space-md px-margin mt-2" id="stage-vitality">
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-md flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+            Preventive &amp; Mature Health
+          </span>
+<h3 class="font-title-lg text-title-lg text-on-surface mt-1">Perimenopause &amp; Screening</h3>
+</div>
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed/40 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">vital_signs</span>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Cervical &amp; Breast Screening</span>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">Due in 30d</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Annual Pap Smear &amp; Digital Mammography reminders synced with your nearest district hospital clinic.
+        </p>
+<button class="h-9 px-3 rounded-lg bg-tertiary text-on-tertiary font-label-sm text-label-sm font-bold shadow-sm active:scale-95 flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">event_available</span> Schedule at KC General
+        </button>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="min-w-0">
+<p class="font-title-md text-title-md text-on-surface">DEXA Bone Density Alert</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calcium 1000mg + Vit D3 weekly regimen</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+</div>
+</div>
+</div>
+<!-- ASHA Community Support & Instant Doctor Teleconsult Banner -->
+<section class="px-margin mt-3">
+<div class="p-3.5 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between gap-3">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[22px]">support_agent</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1">
+<h4 class="font-title-md text-title-md text-on-surface truncate">ASHA Worker: Sunita D.</h4>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Ward 12 Maternal Health Facilitator</p>
+</div>
+</div>
+<a class="h-9 px-3.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold flex items-center gap-1 shrink-0 active:scale-95 shadow-sm" href="tel:104">
+<span class="material-symbols-outlined text-[16px]">chat</span> Connect
+      </a>
+</div>
+</section>
+<!-- Hardware Quick Action Floating Dock (Bottom Thumb Ergonomics) -->
+<div class="sticky bottom-3 z-30 px-margin mt-4">
+<div class="p-2 rounded-2xl bg-surface-container-lowest/95 backdrop-blur-xl shadow-xl flex items-center justify-between gap-2">
+<!-- Voice Mic Button -->
+<button class="flex-1 h-12 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-md" id="micBtn" onclick="toggleVoiceRecording()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="micIcon" style="font-variation-settings: 'FILL' 1;">mic</span>
+<span id="micText">Speak Symptoms</span>
+</button>
+<!-- GPS Share Location Button -->
+<button class="h-12 w-12 rounded-xl bg-surface-container-low text-on-surface flex items-center justify-center active:scale-95 transition-transform shadow-sm relative" id="gpsBtn" onclick="shareLiveLocation()" title="Share GPS Location for Dispatch" type="button">
+<span class="material-symbols-outlined text-[22px] text-secondary">my_location</span>
+<span class="hidden absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-secondary animate-ping" id="gpsPulse"></span>
+</button>
+<!-- OCR Prescription/Report Scanner Button -->
+<button class="h-12 w-12 rounded-xl bg-surface-container-low text-on-surface flex items-center justify-center active:scale-95 transition-transform shadow-sm" id="scanBtn" onclick="triggerScanFlow()" title="Scan Lab Report / Prescription OCR" type="button">
+<span class="material-symbols-outlined text-[22px] text-tertiary">document_scanner</span>
+</button>
+</div>
+<!-- Dynamic Audio Wave Toast / Feedback indicator -->
+<div class="hidden mt-2 p-3 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl flex items-center justify-between animate-fade-in" id="voiceFeedbackToast">
+<div class="flex items-center gap-2">
+<span class="flex gap-1 items-end h-4">
+<span class="w-1 h-2 bg-primary-fixed rounded-full animate-bounce"></span>
+<span class="w-1 h-4 bg-primary rounded-full animate-pulse"></span>
+<span class="w-1 h-3 bg-secondary-fixed rounded-full animate-bounce"></span>
+</span>
+<span class="font-label-sm text-label-sm">Listening in regional dialect... (Kannada/Hindi/Tamil)</span>
+</div>
+<button class="text-primary-fixed font-label-sm text-label-sm font-bold" onclick="toggleVoiceRecording()" type="button">Stop</button>
+</div>
+<!-- Notification Toast Container -->
+<div class="hidden mt-2 p-2.5 rounded-xl bg-secondary text-on-secondary shadow-md font-label-md text-label-md flex items-center gap-2" id="generalToast">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span id="generalToastText">Action recorded successfully</span>
+</div>
+</div>
+</div>
+<script>
+  // Language Selector toggle
+  const langMenuBtn = document.getElementById('langMenuBtn');
+  const langDropdown = document.getElementById('langDropdown');
+  const currentLangText = document.getElementById('currentLangText');
+
+  if (langMenuBtn && langDropdown) {
+    langMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      langDropdown.classList.toggle('hidden');
+      langDropdown.classList.toggle('flex');
+    });
+
+    document.addEventListener('click', () => {
+      langDropdown.classList.add('hidden');
+      langDropdown.classList.remove('flex');
+    });
+  }
+
+  function selectLanguage(langName) {
+    currentLangText.textContent = langName;
+    langDropdown.classList.add('hidden');
+    langDropdown.classList.remove('flex');
+    showToast(`Switched language to ${langName}`);
+  }
+
+  // Hospital Accordion toggle
+  const hospToggleBtn = document.getElementById('hospToggleBtn');
+  const hospContent = document.getElementById('hospContent');
+  const hospChevron = document.getElementById('hospChevron');
+
+  if (hospToggleBtn) {
+    hospToggleBtn.addEventListener('click', () => {
+      hospContent.classList.toggle('hidden');
+      if (hospContent.classList.contains('hidden')) {
+        hospChevron.style.transform = 'rotate(0deg)';
+      } else {
+        hospChevron.style.transform = 'rotate(180deg)';
+      }
+    });
+  }
+
+  // Switch Lifespan Stage Tabs
+  function switchStage(stageId, targetBtn) {
+    document.querySelectorAll('.stage-panel').forEach(panel => {
+      panel.classList.add('hidden');
+    });
+
+    const activePanel = document.getElementById(stageId);
+    if (activePanel) {
+      activePanel.classList.remove('hidden');
+    }
+
+    document.querySelectorAll('.stage-tab-btn').forEach(btn => {
+      btn.classList.remove('bg-primary', 'text-on-primary');
+      btn.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+    });
+
+    targetBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+    targetBtn.classList.add('bg-primary', 'text-on-primary');
+  }
+
+  // Kick counter micro-interaction
+  let kicks = 8;
+  function incrementKicks() {
+    kicks += 1;
+    const kickDisplay = document.getElementById('kickDisplay');
+    if (kickDisplay) {
+      kickDisplay.textContent = kicks;
+      kickDisplay.classList.add('scale-125');
+      setTimeout(() => kickDisplay.classList.remove('scale-125'), 150);
+    }
+    showToast(`Baby kick #${kicks} logged with timestamp`);
+  }
+
+  // Water intake logger
+  let waterLiters = 2.1;
+  function logWaterGlass() {
+    waterLiters = +(waterLiters + 0.25).toFixed(2);
+    const waterDisplay = document.getElementById('waterCount');
+    if (waterDisplay) {
+      waterDisplay.textContent = waterLiters;
+    }
+    showToast('Hydration logged: +250ml');
+  }
+
+  // Dose taker toggle
+  let doseTaken = false;
+  function toggleDose() {
+    doseTaken = !doseTaken;
+    const doseText = document.getElementById('doseText');
+    const doseBtn = document.getElementById('doseCheckBtn');
+    if (doseTaken) {
+      doseText.textContent = 'Dose Taken ✓';
+      doseBtn.classList.remove('bg-secondary');
+      doseBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      showToast('Iron + Folic Acid logged to ABDM Record');
+    } else {
+      doseText.textContent = 'Mark Taken';
+      doseBtn.classList.add('bg-secondary');
+      doseBtn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+    }
+  }
+
+  // Voice Recording simulator
+  let isRecording = false;
+  function toggleVoiceRecording() {
+    isRecording = !isRecording;
+    const toast = document.getElementById('voiceFeedbackToast');
+    const micBtn = document.getElementById('micBtn');
+    const micText = document.getElementById('micText');
+
+    if (isRecording) {
+      toast.classList.remove('hidden');
+      micBtn.classList.add('bg-error');
+      micBtn.classList.remove('bg-primary');
+      micText.textContent = 'Listening...';
+    } else {
+      toast.classList.add('hidden');
+      micBtn.classList.remove('bg-error');
+      micBtn.classList.add('bg-primary');
+      micText.textContent = 'Speak Symptoms';
+      showToast('Voice note transcribed into clinical summary');
+    }
+  }
+
+  // Share GPS Location
+  function shareLiveLocation() {
+    const pulse = document.getElementById('gpsPulse');
+    if (pulse) pulse.classList.remove('hidden');
+    showToast('GPS coordinates locked: Lat 12.9716, Long 77.5946');
+    setTimeout(() => {
+      if (pulse) pulse.classList.add('hidden');
+    }, 4000);
+  }
+
+  // Scan OCR Simulation
+  function triggerScanFlow() {
+    showToast('Camera OCR opened: Align prescription or lab blood report');
+  }
+
+  // General Toast helper
+  function showToast(message) {
+    const toast = document.getElementById('generalToast');
+    const toastText = document.getElementById('generalToastText');
+    if (!toast || !toastText) return;
+    toastText.textContent = message;
+    toast.classList.remove('hidden');
+    clearTimeout(window.__toastTimeout);
+    window.__toastTimeout = setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 3200);
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(11,28,48,0.06)]" data-active-classes="text-primary font-bold"><div class="grid grid-cols-4 items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 h-full rounded-xl text-on-surface-variant transition-colors hover:text-on-surface active:bg-surface-container/50" data-path="home-auth" href="#"><span class="material-symbols-outlined text-[24px]">female</span><span class="font-label-sm text-label-sm text-center leading-tight truncate px-1">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 h-full rounded-xl transition-colors active:bg-surface-container/50 text-primary font-bold" data-path="lifespan-dashboard" href="#"><span class="material-symbols-outlined text-[24px]">vital_signs</span><span class="font-label-sm text-label-sm text-center leading-tight truncate px-1">Dashboard</span></a><a class="flex flex-col items-center justify-center gap-0.5 h-full rounded-xl text-on-surface-variant transition-colors hover:text-on-surface active:bg-surface-container/50" data-path="emergency-triage" href="#"><span class="material-symbols-outlined text-[24px]">emergency</span><span class="font-label-sm text-label-sm text-center leading-tight truncate px-1">Triage</span></a><a class="flex flex-col items-center justify-center gap-0.5 h-full rounded-xl text-on-surface-variant transition-colors hover:text-on-surface active:bg-surface-container/50" data-path="clinical-portal" href="#"><span class="material-symbols-outlined text-[24px]">medical_services</span><span class="font-label-sm text-label-sm text-center leading-tight truncate px-1">Portal</span></a></div></nav></body></html>

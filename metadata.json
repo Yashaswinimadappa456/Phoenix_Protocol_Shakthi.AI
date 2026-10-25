@@ -1,0 +1,6 @@
+{
+  "name": "Shakthi.ai",
+  "description": "Culturally attuned maternal & women's healthcare assistant with ABDM integration, clinical triage with Gemini AI, and role-based workflows for Patients, ASHAs, and Clinicians.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,8 @@
+{
+  "firestore": [
+    {
+      "database": "ai-studio-android-heracare-abbe5c8e-2c17-4ec7-8049-ac601dd25a91",
+      "rules": "firestore.rules"
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>HeraCare AI</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:max(env(safe-area-inset-bottom,0px),0.75rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#ffffff", "on-primary-container": "#fffbff", "on-surface-variant": "#5b4041", "tertiary-fixed-dim": "#89ceff", "on-primary-fixed-variant": "#92002a", "on-error-container": "#93000a", "on-surface": "#0b1c30", "on-secondary": "#ffffff", "secondary-fixed-dim": "#4edea3", "outline": "#8f6f71", "on-tertiary-container": "#fcfcff", "inverse-surface": "#213145", "on-tertiary": "#ffffff", "tertiary-fixed": "#c9e6ff", "primary": "#b90538", "surface-container-high": "#dce9ff", "on-secondary-fixed-variant": "#005236", "outline-variant": "#e3bdbf", "surface-bright": "#f8f9ff", "on-secondary-fixed": "#002113", "secondary": "#006c49", "surface-container-low": "#eff4ff", "on-error": "#ffffff", "on-primary": "#ffffff", "surface-tint": "#bc0b3b", "secondary-fixed": "#6ffbbe", "error": "#ba1a1a", "on-primary-fixed": "#40000d", "background": "#f8f9ff", "primary-fixed-dim": "#ffb2b7", "secondary-container": "#6cf8bb", "surface-variant": "#d3e4fe", "surface": "#f8f9ff", "error-container": "#ffdad6", "primary-container": "#dc2c4f", "on-tertiary-fixed": "#001e2f", "surface-dim": "#cbdbf5", "inverse-primary": "#ffb2b7", "surface-container-highest": "#d3e4fe", "on-secondary-container": "#00714d", "tertiary-container": "#007cb1", "on-background": "#0b1c30", "tertiary": "#00628d", "primary-fixed": "#ffdadb", "on-tertiary-fixed-variant": "#004c6e", "inverse-on-surface": "#eaf1ff", "surface-container": "#e5eeff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "gutter-desktop": "2rem", "space-xl": "2.5rem", "margin-tablet": "2rem", "gutter": "1rem", "margin-desktop": "3rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "1rem", "gutter-tablet": "1.5rem", "space-lg": "1.5rem" }, fontFamily: { "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, fontSize: { "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,28,48,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="HeraCare AI Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1WjOzP52nv4zVqce05RAHz5gRfDeQ7TXWJBpYKUk9lDJQmB63f-GfJvXZbEvAEpSnqg55s0EcGU25iotIy1oFyR5suv1kxmXz5Z4TNcQAZn7saDvQ1BoYk28zEsUw7WC45hGuNr0e4bZ5C3AQDcLxjHWiOMzSkoSAmDxTXkA5zdkVofkUANeRJiq062v6Sltl_MOR17TH2zg1W5dq1LCU5AL9ZAh8wyvdcoFpJVtCxSUWxAnhxQOEgsLf9z"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">HeraCare AI</span><span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-[10px] font-semibold leading-none">ABDM</span></div><span class="font-title-md text-title-md text-on-surface truncate">Emergency Triage</span></div></div><div class="flex items-center gap-space-sm shrink-0"><a aria-label="Emergency SOS Call 108" class="h-10 px-3 bg-error text-on-error rounded-full flex items-center justify-center gap-1 shadow-[0_4px_12px_rgba(186,26,26,0.25)] active:scale-95 transition-transform" href="tel:108"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span class="font-label-md text-label-md font-bold">108 SOS</span></a><div class="relative flex items-center justify-center p-0.5 rounded-full bg-surface-container-high"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWItI3uxOIDrcLAQHSRi3i1C8FVv4EIPrTGlUtJNiykAdRGZ931OnsuAqBLuYdxmKfsWohybWTi5SV7URcEgWzQQl3h9B1Bvh-EjSOdI4CJZmpdDecGvqCo9xACmeKdH-17e-Hk-q6wIBk18huB7dmB6ehLXtgPNiMgLc1zKZlvoBPqqT4O-eVZb48SYORDza_QDq1iNrYZ-CehLgA1Kn4EnyupQnsvJJTOsNbVy1csALr_-7HlxWmQ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface"></span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full px-margin space-y-space-md">
+<!-- Top Operational Context & Offline Status Badge -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">emergency_home</span>
+<span class="font-title-md text-title-md text-on-surface">Emergency &amp; Triage Canvas</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-semibold">Offline Mesh Ready</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Priority sorting: South Zone (TN • KA • TS)</span>
+<span class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[15px]">sync</span> Live Sync Active
+      </span>
+</div>
+</div>
+<!-- Quick Filter Pills -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1" id="filterContainer">
+<button class="filter-btn shrink-0 px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-transform active:scale-95" data-filter="all" onclick="filterTriage('all')">All Triage (3)</button>
+<button class="filter-btn shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md transition-transform active:scale-95 flex items-center gap-1" data-filter="red" onclick="filterTriage('red')">
+<span class="w-2 h-2 rounded-full bg-error"></span> Urgent Level 1
+    </button>
+<button class="filter-btn shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md transition-transform active:scale-95 flex items-center gap-1" data-filter="yellow" onclick="filterTriage('yellow')">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span> Level 2 Consult
+    </button>
+<button class="filter-btn shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md transition-transform active:scale-95 flex items-center gap-1" data-filter="green" onclick="filterTriage('green')">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Level 3 Routine
+    </button>
+</div>
+<!-- 1. RED CARD - URGENT HOSPITAL TRANSFER -->
+<div class="triage-card triage-red w-full bg-error-container/20 rounded-xl p-space-md shadow-md flex flex-col gap-space-md relative overflow-hidden" data-category="red">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-error/10 rounded-full blur-xl pointer-events-none"></div>
+<!-- Header of Card -->
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Close-up portrait of a 29 year old South Indian woman with a gentle maternal expression wearing traditional subtle silver earrings with a soft studio background, warm lighting, natural skin tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQg6p_NeHmCzrVnh5BX2SSMrMhzjTQYui3tFkFIXY8IqS9yswNeg8OwsTbZwbu4oyIojyDw-NpKbZ5Quq_Lefr56FOZWRvDu6CusxKDa7FZlwWDIpZHBvsbZyYFuPUX2YsOFTdVnqza4cTfz3M2JxJz9rdRFIDlNSbKkj8-4ztb3kQ_RiSoJnSojbHYD6ew2cpPB-IC9mFKL0aeTZeTo8fF06AEAryajPqyTU9_MCOjaIbZ7Jof8xEeA"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-error flex items-center justify-center text-on-error shadow-sm">
+<span class="material-symbols-outlined text-[11px]" style="font-variation-settings: 'FILL' 1;">priority_high</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-md text-title-md text-on-surface font-bold truncate">Lakshmi Sundaram</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">29y</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant truncate">
+<span class="material-symbols-outlined text-[14px] text-primary">location_on</span>
+<span>Madurai / Bengaluru Rural • 34w Gestation</span>
+</div>
+</div>
+</div>
+<div class="px-2 py-1 rounded-full bg-error text-on-error flex items-center gap-1 shrink-0 animate-pulse">
+<span class="material-symbols-outlined text-[13px]">emergency</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Level 1 Red</span>
+</div>
+</div>
+<!-- Alert Banner / Chief Symptoms -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">warning</span> Critical Pre-Eclampsia Triad
+        </span>
+<span class="font-label-sm text-label-sm text-error bg-error/10 px-2 py-0.5 rounded font-bold">160/105 mmHg</span>
+</div>
+<div class="grid grid-cols-2 gap-1.5">
+<div class="bg-error/5 rounded p-2 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[18px]">visibility_off</span>
+<span class="font-body-sm text-body-sm text-on-surface leading-snug">Severe Blurred Vision</span>
+</div>
+<div class="bg-error/5 rounded p-2 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[18px]">personal_injury</span>
+<span class="font-body-sm text-body-sm text-on-surface leading-snug">Acute Epigastric Pain</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+        Immediate risk of maternal eclamptic seizures. Obstetric referral initiated under JSSK protocol.
+      </p>
+</div>
+<!-- Red Card Actions -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="grid grid-cols-2 gap-2">
+<a class="h-12 bg-error text-on-error rounded-lg flex items-center justify-center gap-1.5 shadow-md active:scale-95 transition-transform font-label-lg text-label-lg font-bold" href="tel:108">
+<span class="material-symbols-outlined text-[20px]">e911_emergency</span>
+<span>108 Ambulance</span>
+</a>
+<a class="h-12 bg-surface-container-lowest text-primary rounded-lg flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform font-label-lg text-label-lg font-bold" href="tel:0802221111">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>Nearest OB-ICU</span>
+</a>
+</div>
+<!-- Offline USSD Emergency Drawer Button -->
+<div class="w-full bg-surface-container-highest rounded-lg p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]">signal_cellular_connected_no_internet_0_bar</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">No Internet? Dial Offline USSD</span>
+<span class="font-body-sm text-body-sm text-primary font-mono font-bold tracking-wider">*108*99#</span>
+</div>
+</div>
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm font-semibold active:scale-90 transition-transform flex items-center gap-1 shrink-0" onclick="dialUSSD('*108*99#')">
+<span class="material-symbols-outlined text-[14px]">call</span>
+<span>Trigger</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 2. YELLOW CARD - DOCTOR CONSULTATION NEEDED -->
+<div class="triage-card triage-yellow w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md relative overflow-hidden" data-category="yellow">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-amber-500/10 rounded-full blur-xl pointer-events-none"></div>
+<!-- Header of Card -->
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Portrait of a young 24 year old South Indian woman with tied back hair wearing a modest comfortable kurta, soft indoor lighting, natural calm look, warm tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFHy0ryAECLWnZ0NZHv05ND-hiEG5_wufHMgo3d0gEgbg_AgUKybwFVEJ7APrktPTzBGTV5HvLsmA1SIYJqHL47_apbiDHM2-0aNE0N6Dt_E3FcuMocyRs8SkPJifiBOrk0SaAgTUu2agRuE4YYJACQLvjsrDrdCUoAhCPJapHqmmS22T3bMZwFWoZ2BkxsUfvFjDbLfpok4bvOMTmXlXWdU3ryDkrzv0PYxzl1SSajcI9uaIPqohuUg"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-amber-500 flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[11px]" style="font-variation-settings: 'FILL' 1;">clinical_notes</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-md text-title-md text-on-surface font-bold truncate">Kavya Reddy</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">24y</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant truncate">
+<span class="material-symbols-outlined text-[14px] text-tertiary">location_on</span>
+<span>Secunderabad, Hyderabad • ABHA Linked</span>
+</div>
+</div>
+</div>
+<div class="px-2 py-1 rounded-full bg-amber-100 text-amber-900 flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[13px] text-amber-700">schedule</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Level 2 Consult</span>
+</div>
+</div>
+<!-- Symptoms Overview -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-amber-600">medical_services</span> Severe PCOS Evaluation
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cycle Day 45+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Debilitating dysmenorrhea cramping (VAS 7/10), unmanaged hormonal cycle irregularity, pelvic ultrasound scan confirmation pending.
+      </p>
+<div class="flex items-center gap-2 pt-1 flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">Pelvimetry Pending</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">Hormonal Screen</span>
+</div>
+</div>
+<!-- Yellow Card Actions -->
+<div class="flex flex-col gap-2">
+<button class="h-11 w-full bg-tertiary text-on-tertiary rounded-lg flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform font-label-lg text-label-lg font-bold" onclick="handleConsultationBooked(this)">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+<span>Book Tele-Consult within 24h</span>
+</button>
+<button class="h-11 w-full bg-surface-container text-on-surface rounded-lg flex items-center justify-between px-3.5 shadow-sm active:scale-95 transition-transform font-label-md text-label-md font-semibold" onclick="togglePrescriptionDetails()">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">prescriptions</span>
+<span>View Antispasmodic &amp; Warm Compress Plan</span>
+</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" id="chevronIcon">expand_more</span>
+</button>
+<!-- Hidden Collapsible Treatment Plan -->
+<div class="hidden bg-surface-container-lowest p-3 rounded-lg text-body-sm font-body-sm text-on-surface space-y-1 shadow-inner" id="rxDetails">
+<div class="flex items-center justify-between font-semibold">
+<span>• Meftal-Spas (SOS for severe colic)</span>
+<span class="text-secondary font-label-sm text-label-sm">Verified Rx</span>
+</div>
+<p class="text-on-surface-variant">• 20 min castor oil hot water pack over lower pelvic quadrant.</p>
+<p class="text-on-surface-variant">• Fasting blood draw requested for Serum FSH/LH ratio.</p>
+</div>
+</div>
+</div>
+<!-- 3. GREEN CARD - SAFE HOME CARE & MONITORING -->
+<div class="triage-card triage-green w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md relative overflow-hidden" data-category="green">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-secondary/10 rounded-full blur-xl pointer-events-none"></div>
+<!-- Header of Card -->
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Warm serene portrait of a 31 year old South Indian new mother holding her baby gently with traditional soft cotton sari drape, soft morning light in Mysuru, candid emotional maternal connection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjQZTuztmcYgsoR0sk1aExJ6rw2WRPIBliVTjf0q3YtoJ2xNcYVMQu9FsSovT4SBjshY9_2-EVB8x8M2L94FTByNphBcnVIZ3SBhkvE6pZYMt39JRBCeQXb3rz50HPdmAJK5DRK5NkcZzs3DqD1aIB5W2D55zTRhHVqj1sDgQ1rrtaB88eABz00TC6AmeEBQ9CeYCeBQhAB1bjPafE208UaV_dNJkXx0FloriN-40SK2nzPsjDeS8mEg"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[11px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-md text-title-md text-on-surface font-bold truncate">Ananya Gowda</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">31y</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant truncate">
+<span class="material-symbols-outlined text-[14px] text-secondary">location_on</span>
+<span>Kuvempunagar, Mysuru • Day 12 Postpartum</span>
+</div>
+</div>
+</div>
+<div class="px-2 py-1 rounded-full bg-secondary/15 text-secondary flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[13px]">home_health</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Level 3 Home</span>
+</div>
+</div>
+<!-- Safe Parameters Summary -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">spa</span> Routine Postnatal Recovery
+        </span>
+<span class="font-label-sm text-label-sm font-medium text-secondary">Lochia: Serosa (Normal)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Mild bilateral breast engorgement noted on Day 12; latch mechanics adjustment recommended. Vitals stable (BP 118/76 mmHg, afebrile).
+      </p>
+</div>
+<!-- Green Card Actions -->
+<div class="grid grid-cols-2 gap-2">
+<button class="h-11 bg-secondary text-on-secondary rounded-lg flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform font-label-md text-label-md font-bold text-center" onclick="openLatchGuide()">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+<span>Latch Video Guide</span>
+</button>
+<button class="h-11 bg-surface-container text-on-surface rounded-lg flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform font-label-md text-label-md font-semibold text-center" onclick="scheduleFollowup(this)">
+<span class="material-symbols-outlined text-[18px] text-secondary">event_available</span>
+<span>Check in 7 Days</span>
+</button>
+</div>
+</div>
+<!-- Bottom Emergency Helpline & JSSK Scheme Banner -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm mt-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface leading-tight">National Women Helpline</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Free 24x7 Emergency Assistance</span>
+</div>
+</div>
+<a class="h-9 px-3.5 bg-primary text-on-primary rounded-full font-label-md text-label-md font-bold flex items-center gap-1 active:scale-95 transition-transform shadow-sm" href="tel:181">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Dial 181</span>
+</a>
+</div>
+<!-- JSSK Free Care / Transit Guarantee Strip -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low text-on-surface">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0">verified_user</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold truncate">Janani Shishu Suraksha Karyakram (JSSK)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Zero-expense delivery, C-section &amp; emergency hospital transit</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary/15 text-secondary font-label-sm text-label-sm font-bold shrink-0">100% Free</span>
+</div>
+</div>
+<!-- Toast Notification Modal (Micro-interaction) -->
+<div class="fixed bottom-20 inset-x-margin z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none flex justify-center" id="triageToast">
+<div class="bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-xl flex items-center gap-2 max-w-sm w-full">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed" id="toastIcon">check_circle</span>
+<span class="font-body-md text-body-md" id="toastText">Action triggered successfully</span>
+</div>
+</div>
+</div>
+<script>
+  function showToast(message, icon = 'check_circle') {
+    const toast = document.getElementById('triageToast');
+    const toastText = document.getElementById('toastText');
+    const toastIcon = document.getElementById('toastIcon');
+    if (!toast) return;
+
+    toastText.innerText = message;
+    toastIcon.innerText = icon;
+    toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 2800);
+  }
+
+  function filterTriage(category) {
+    const cards = document.querySelectorAll('.triage-card');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    buttons.forEach(btn => {
+      if (btn.getAttribute('data-filter') === category) {
+        btn.classList.add('bg-primary', 'text-on-primary');
+        btn.classList.remove('bg-surface-container', 'text-on-surface');
+      } else {
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-surface-container', 'text-on-surface');
+      }
+    });
+
+    cards.forEach(card => {
+      if (category === 'all' || card.getAttribute('data-category') === category) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function dialUSSD(code) {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(code).then(() => {
+        showToast('USSD code copied: ' + code + ' (Dialing...)', 'dialpad');
+      }).catch(() => {
+        showToast('Dialing low-bandwidth USSD: ' + code, 'dialpad');
+      });
+    } else {
+      showToast('Dialing low-bandwidth USSD: ' + code, 'dialpad');
+    }
+    setTimeout(() => {
+      window.location.href = 'tel:' + encodeURIComponent(code);
+    }, 900);
+  }
+
+  function togglePrescriptionDetails() {
+    const rx = document.getElementById('rxDetails');
+    const icon = document.getElementById('chevronIcon');
+    if (rx.classList.contains('hidden')) {
+      rx.classList.remove('hidden');
+      icon.innerText = 'expand_less';
+    } else {
+      rx.classList.add('hidden');
+      icon.innerText = 'expand_more';
+    }
+  }
+
+  function handleConsultationBooked(button) {
+    button.classList.add('opacity-75');
+    button.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span><span>Scheduling with Dr. Swaminathan...</span>';
+    setTimeout(() => {
+      button.innerHTML = '<span class="material-symbols-outlined text-[18px]">verified</span><span>Tele-Consult Confirmed (Today 4:30 PM)</span>';
+      button.classList.replace('bg-tertiary', 'bg-secondary');
+      button.classList.remove('opacity-75');
+      showToast('Tele-consultation booked with Gynecologist', 'calendar_today');
+    }, 1100);
+  }
+
+  function scheduleFollowup(btn) {
+    btn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary">task_alt</span><span>Scheduled for Day 19</span>';
+    showToast('ASHA post-natal home visit slotted for 7 days', 'event_available');
+  }
+
+  function openLatchGuide() {
+    showToast('Loading bilingual Tamil/Kannada Latch video...', 'smart_display');
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(11,28,48,0.06)]" data-active-classes="text-primary font-bold"><div class="grid grid-cols-4 items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 h-full rounded-xl text-on-surface-variant transition-colors hover:text-on-surface active:bg-surface-container/50" data-path="home-auth" href="#"><span class="material-symbols-outlined text-[24px]">female</span><span class="font-label-sm text-label-sm text-center leading-tight truncate px-1">Home</span></a><a class="flex flex-col items-center justify-center gap-0.5 h-full rounded-xl text-on-surface-variant transition-colors hover:text-on-surface active:bg-surface-container/50" data-path="lifespan-dashboard" href="#"><span class="material-symbols-outlined text-[24px]">vital_signs</span><span class="font-label-sm text-label-sm text-center leading-tight truncate px-1">Dashboard</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 h-full rounded-xl transition-colors active:bg-surface-container/50 text-primary font-bold" data-path="emergency-triage" href="#"><span class="material-symbols-outlined text-[24px]">emergency</span><span class="font-label-sm text-label-sm text-center leading-tight truncate px-1">Triage</span></a><a class="flex flex-col items-center justify-center gap-0.5 h-full rounded-xl text-on-surface-variant transition-colors hover:text-on-surface active:bg-surface-container/50" data-path="clinical-portal" href="#"><span class="material-symbols-outlined text-[24px]">medical_services</span><span class="font-label-sm text-label-sm text-center leading-tight truncate px-1">Portal</span></a></div></nav></body></html>

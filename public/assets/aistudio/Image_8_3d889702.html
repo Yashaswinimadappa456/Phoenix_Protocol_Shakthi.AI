@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>HeraCare AI</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:max(env(safe-area-inset-bottom,0px),0.75rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#ffffff", "on-primary-container": "#fffbff", "on-surface-variant": "#5b4041", "tertiary-fixed-dim": "#89ceff", "on-primary-fixed-variant": "#92002a", "on-error-container": "#93000a", "on-surface": "#0b1c30", "on-secondary": "#ffffff", "secondary-fixed-dim": "#4edea3", "outline": "#8f6f71", "on-tertiary-container": "#fcfcff", "inverse-surface": "#213145", "on-tertiary": "#ffffff", "tertiary-fixed": "#c9e6ff", "primary": "#b90538", "surface-container-high": "#dce9ff", "on-secondary-fixed-variant": "#005236", "outline-variant": "#e3bdbf", "surface-bright": "#f8f9ff", "on-secondary-fixed": "#002113", "secondary": "#006c49", "surface-container-low": "#eff4ff", "on-error": "#ffffff", "on-primary": "#ffffff", "surface-tint": "#bc0b3b", "secondary-fixed": "#6ffbbe", "error": "#ba1a1a", "on-primary-fixed": "#40000d", "background": "#f8f9ff", "primary-fixed-dim": "#ffb2b7", "secondary-container": "#6cf8bb", "surface-variant": "#d3e4fe", "surface": "#f8f9ff", "error-container": "#ffdad6", "primary-container": "#dc2c4f", "on-tertiary-fixed": "#001e2f", "surface-dim": "#cbdbf5", "inverse-primary": "#ffb2b7", "surface-container-highest": "#d3e4fe", "on-secondary-container": "#00714d", "tertiary-container": "#007cb1", "on-background": "#0b1c30", "tertiary": "#00628d", "primary-fixed": "#ffdadb", "on-tertiary-fixed-variant": "#004c6e", "inverse-on-surface": "#eaf1ff", "surface-container": "#e5eeff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "gutter-desktop": "2rem", "space-xl": "2.5rem", "margin-tablet": "2rem", "gutter": "1rem", "margin-desktop": "3rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "1rem", "gutter-tablet": "1.5rem", "space-lg": "1.5rem" }, fontFamily: { "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, fontSize: { "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,28,48,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="HeraCare AI Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1WjOzP52nv4zVqce05RAHz5gRfDeQ7TXWJBpYKUk9lDJQmB63f-GfJvXZbEvAEpSnqg55s0EcGU25iotIy1oFyR5suv1kxmXz5Z4TNcQAZn7saDvQ1BoYk28zEsUw7WC45hGuNr0e4bZ5C3AQDcLxjHWiOMzSkoSAmDxTXkA5zdkVofkUANeRJiq062v6Sltl_MOR17TH2zg1W5dq1LCU5AL9ZAh8wyvdcoFpJVtCxSUWxAnhxQOEgsLf9z"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">HeraCare AI</span><span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-[10px] font-semibold leading-none">ABDM</span></div><span class="font-title-md text-title-md text-on-surface truncate">Clinical Portal</span></div></div><div class="flex items-center gap-space-sm shrink-0"><a aria-label="Emergency SOS Call 108" class="h-10 px-3 bg-error text-on-error rounded-full flex items-center justify-center gap-1 shadow-[0_4px_12px_rgba(186,26,26,0.25)] active:scale-95 transition-transform" href="tel:108"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span class="font-label-md text-label-md font-bold">108 SOS</span></a><div class="relative flex items-center justify-center p-0.5 rounded-full bg-surface-container-high"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWItI3uxOIDrcLAQHSRi3i1C8FVv4EIPrTGlUtJNiykAdRGZ931OnsuAqBLuYdxmKfsWohybWTi5SV7URcEgWzQQl3h9B1Bvh-EjSOdI4CJZmpdDecGvqCo9xACmeKdH-17e-Hk-q6wIBk18huB7dmB6ehLXtgPNiMgLc1zKZlvoBPqqT4O-eVZb48SYORDza_QDq1iNrYZ-CehLgA1Kn4EnyupQnsvJJTOsNbVy1csALr_-7HlxWmQ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface"></span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full px-margin py-space-md gap-space-lg">
+<!-- Provider Identity & Clinical Status Banner -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative shrink-0">
+<img alt="Dr. Soundarya Ramesh, MD (OB/GYN)" class="w-16 h-16 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWItI3uxOIDrcLAQHSRi3i1C8FVv4EIPrTGlUtJNiykAdRGZ931OnsuAqBLuYdxmKfsWohybWTi5SV7URcEgWzQQl3h9B1Bvh-EjSOdI4CJZmpdDecGvqCo9xACmeKdH-17e-Hk-q6wIBk18huB7dmB6ehLXtgPNiMgLc1zKZlvoBPqqT4O-eVZb48SYORDza_QDq1iNrYZ-CehLgA1Kn4EnyupQnsvJJTOsNbVy1csALr_-7HlxWmQ"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Dr. Soundarya Ramesh</span>
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span> NMC Verified #KMC-48291
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">MD (OB/GYN) • Senior Maternal-Fetal Consultant</p>
+<span class="font-label-sm text-label-sm text-tertiary mt-0.5">Apollo Cradle &amp; HeraCare Network</span>
+</div>
+</div>
+<!-- Tele-Triage Availability Switcher -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Accepting Urgent Triage &amp; Consults</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="dutyToggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-dim peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Quick Clinical Telemetry Row -->
+<div class="grid grid-cols-3 gap-space-xs text-center">
+<div class="bg-surface-container p-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Queue Load</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">3 Active</span>
+</div>
+<div class="bg-surface-container p-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">SOS Escalations</span>
+<span class="font-title-md text-title-md text-error font-bold">1 En Route</span>
+</div>
+<div class="bg-surface-container p-space-xs rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">ABDM Sync</span>
+<span class="font-title-md text-title-md text-secondary font-bold">Secured</span>
+</div>
+</div>
+</section>
+<!-- Live Telehealth Launcher Preview Widget -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">videocam</span>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Encrypted Tele-Consult Suite</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">WebRTC 256-Bit</span>
+</div>
+<!-- Video Preview Box -->
+<div class="relative w-full h-48 bg-inverse-surface rounded-xl overflow-hidden flex items-center justify-center">
+<div class="w-full h-full bg-gradient-to-t from-inverse-surface via-inverse-surface/80 to-transparent flex flex-col justify-end p-space-sm text-inverse-on-surface z-10">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-md text-label-md font-semibold text-inverse-on-surface">Ready: Kavya Reddy (Room #942)</span>
+</div>
+<span class="font-label-sm text-label-sm text-surface-variant">HD 1080p • 42ms</span>
+</div>
+</div>
+<!-- Real-time Vital Telemetry Overlay Pill -->
+<div class="absolute top-space-sm left-space-sm z-20 bg-inverse-surface/85 backdrop-blur-md rounded-lg px-2.5 py-1.5 flex items-center gap-space-sm shadow-md">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-error">favorite</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface font-bold">78 bpm</span>
+</div>
+<span class="text-outline-variant text-[12px]">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">speed</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface font-bold">118/76 mmHg</span>
+</div>
+</div>
+<!-- Doctor Self-PiP window -->
+<div class="absolute top-space-sm right-space-sm z-20 w-16 h-20 rounded-lg overflow-hidden ring-2 ring-primary shadow-lg">
+<img alt="Doctor Preview PIP" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWItI3uxOIDrcLAQHSRi3i1C8FVv4EIPrTGlUtJNiykAdRGZ931OnsuAqBLuYdxmKfsWohybWTi5SV7URcEgWzQQl3h9B1Bvh-EjSOdI4CJZmpdDecGvqCo9xACmeKdH-17e-Hk-q6wIBk18huB7dmB6ehLXtgPNiMgLc1zKZlvoBPqqT4O-eVZb48SYORDza_QDq1iNrYZ-CehLgA1Kn4EnyupQnsvJJTOsNbVy1csALr_-7HlxWmQ"/>
+<div class="absolute bottom-0 inset-x-0 bg-inverse-surface/70 text-[9px] text-center text-inverse-on-surface font-label-sm">Self</div>
+</div>
+<!-- Mic/Cam Quick States -->
+<div class="absolute bottom-3 right-3 z-20 flex items-center gap-1.5">
+<button aria-label="Mute Audio" class="w-8 h-8 rounded-full bg-inverse-surface/80 text-inverse-on-surface flex items-center justify-center backdrop-blur-md active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+</button>
+<button aria-label="Camera Toggle" class="w-8 h-8 rounded-full bg-inverse-surface/80 text-inverse-on-surface flex items-center justify-center backdrop-blur-md active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+</button>
+</div>
+</div>
+<!-- Call Join CTA -->
+<button class="w-full h-12 bg-secondary text-on-secondary rounded-lg font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-md active:scale-[0.99] transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+<span>Join Encrypted Tele-Consultation</span>
+</button>
+</section>
+<!-- Prioritized Clinical Triage Queue -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-space-xs">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Patient Triage Queue</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Prioritized by AI Clinical Acuity Score</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+        Live Sync
+      </span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- 🔴 Urgent Card -->
+<div class="bg-error-container/40 rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm cursor-pointer transition-all hover:bg-error-container/60">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-3.5 h-3.5 rounded-full bg-error shrink-0 ring-4 ring-error/20"></span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Lakshmi Sundaram, 28y</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-error text-on-error font-bold">URGENT</span>
+</div>
+<p class="font-body-sm text-body-sm text-error font-semibold">Pre-Eclampsia Alert • BP 168/104 • 34w 2d</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">2m ago</span>
+</div>
+<div class="bg-surface-container-lowest/80 rounded-lg p-space-sm flex items-center justify-between text-body-sm font-body-sm text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[18px]">ambulance</span>
+<span>108 Ambulance dispatched to KC General Hospital (ETA: 8 mins)</span>
+</div>
+<a class="text-error font-label-md text-label-md font-bold underline shrink-0" href="tel:108">Track</a>
+</div>
+</div>
+<!-- 🟡 Active Consult Ready (Selected Card) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm ring-2 ring-primary/40">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-3.5 h-3.5 rounded-full bg-primary-container shrink-0"></span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Kavya Reddy, 24y</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-bold">ACTIVE CONSULT</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">PCOS &amp; Severe Menorrhagia • ABHA: 91-8472-9102-1849</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold whitespace-nowrap">In Waiting Room</span>
+</div>
+<div class="flex items-center gap-space-sm text-label-sm font-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">calendar_month</span> Cycle Day 38</span>
+<span>•</span>
+<span class="inline-flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">bloodtype</span> Hb 10.4 g/dL</span>
+<span>•</span>
+<span class="inline-flex items-center gap-0.5 text-secondary font-semibold"><span class="material-symbols-outlined text-[14px]">shield</span> ABDM Consent Granted</span>
+</div>
+</div>
+<!-- 🟢 Scheduled Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs opacity-90">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-3.5 h-3.5 rounded-full bg-secondary shrink-0"></span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Ananya Gowda, 31y</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary/10 text-secondary font-semibold">SCHEDULED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lactation Post-Delivery Day 14 Follow-up</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">11:30 AM</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Expanded Patient Dossier: Kavya Reddy -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">folder_shared</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Clinical Dossier: Kavya Reddy</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ABHA #9102-1849</span>
+</div>
+<!-- Quad-split Vitals Matrix -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between">
+          Blood Pressure
+          <span class="w-2 h-2 rounded-full bg-secondary"></span>
+</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">118 / 76 <span class="text-body-sm font-normal text-on-surface-variant">mmHg</span></span>
+<span class="font-label-sm text-label-sm text-secondary">Optimal Normotensive</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between">
+          Resting Heart Rate
+          <span class="w-2 h-2 rounded-full bg-secondary"></span>
+</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">78 <span class="text-body-sm font-normal text-on-surface-variant">bpm</span></span>
+<span class="font-label-sm text-label-sm text-secondary">Regular Rhythm</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between">
+          Fasting Glucose
+          <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">104 <span class="text-body-sm font-normal text-on-surface-variant">mg/dL</span></span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Borderline Impaired</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between">
+          Current Pain VAS
+          <span class="w-2 h-2 rounded-full bg-primary"></span>
+</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">6 / 10 <span class="text-body-sm font-normal text-on-surface-variant">Dysmenorrhea</span></span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Moderate-Severe Cramping</span>
+</div>
+</div>
+<!-- Clinical Diagnostic Notes & Scan Thumbnail -->
+<div class="flex flex-col gap-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Pelvic USG &amp; Diagnostics</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Scanned 3 days ago</span>
+</div>
+<div class="flex items-center gap-space-md">
+<!-- Ultrasound Scan Graphic Placeholder -->
+<div class="w-20 h-20 rounded-lg bg-inverse-surface overflow-hidden shrink-0 relative flex items-center justify-center text-inverse-on-surface">
+<svg class="w-16 h-16 opacity-70" fill="none" viewbox="0 0 100 100">
+<circle cx="50" cy="50" r="40" stroke="#dce9ff" stroke-dasharray="3 3" stroke-width="1.5"></circle>
+<ellipse cx="48" cy="48" fill="#5b4041" opacity="0.6" rx="22" ry="14"></ellipse>
+<circle cx="42" cy="45" fill="#89ceff" r="3"></circle>
+<circle cx="56" cy="46" fill="#89ceff" r="3"></circle>
+<circle cx="49" cy="53" fill="#89ceff" r="3.5"></circle>
+</svg>
+<span class="absolute bottom-1 right-1 text-[8px] bg-inverse-surface/80 px-1 rounded text-inverse-on-surface font-mono">TVS-2D</span>
+</div>
+<div class="flex flex-col justify-center text-body-sm font-body-sm text-on-surface-variant min-w-0">
+<p class="font-bold text-on-surface">Polycystic Ovarian Morphology</p>
+<p class="text-body-sm text-on-surface-variant line-clamp-2">Bilateral enlarged ovaries with &gt;12 peripheral follicles ('necklace sign'). Endometrial thickness: 11.2 mm.</p>
+<span class="font-label-sm text-label-sm text-tertiary mt-1 font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">attachment</span> View High-Res DICOM Scan
+          </span>
+</div>
+</div>
+</div>
+<!-- Doctor Clinical Impression Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-bold text-on-surface">Consultation Impression &amp; Orders</label>
+<div class="p-space-sm bg-surface-container rounded-lg text-body-sm font-body-sm text-on-surface">
+        Recommend cycle initiation with cyclic Progestin therapy (Medroxyprogesterone 10mg OD x 10 days). Initiate Myo-Inositol + D-Chiro-Inositol supplementation. Scheduled lipid profile &amp; OGTT follow-up in 6 weeks.
+      </div>
+</div>
+<!-- Primary Provider Actions -->
+<div class="flex flex-col gap-space-sm mt-space-xs">
+<!-- Action 1: Digital Cryptographic Signature for E-Prescription -->
+<button class="w-full h-12 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-md active:scale-[0.99] transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">draw</span>
+<span>Approve &amp; Sign E-Prescription</span>
+<span class="px-1.5 py-0.5 rounded bg-on-primary/20 text-on-primary text-[10px] font-mono tracking-wider ml-1">SHA-256</span>
+</button>
+<!-- Action 2: ABDM OPD Consultation Pass with Verifiable QR -->
+<div class="bg-surface-container p-space-sm rounded-lg flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<!-- Stylized Inline Verifiable QR -->
+<div class="w-12 h-12 bg-surface-container-lowest p-1 rounded-lg shrink-0 flex items-center justify-center shadow-xs">
+<svg class="w-full h-full text-on-surface" fill="currentColor" viewbox="0 0 24 24">
+<path d="M2 2h8v8H2V2zm2 2v4h4V4H4zm10-2h8v8h-8V2zm2 2v4h4V4h-4zM2 14h8v8H2v-8zm2 2v4h4v-4H4zm14 0h2v2h-2v-2zm-4 0h2v2h-2v-2zm0 4h2v2h-2v-2zm4 0h2v2h-2v-2zm-2-2h2v2h-2v-2zM5 5h2v2H5V5zm12 0h2v2h-2V5zM5 17h2v2H5v-2z"></path>
+</svg>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Verifiable ABDM OPD Pass</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Token #HC-BLR-2024-8491</span>
+</div>
+</div>
+<button class="h-10 px-3 bg-tertiary-container text-on-tertiary-container rounded-lg font-label-md text-label-md font-bold flex items-center gap-1 shrink-0 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Pass</span>
+</button>
+</div>
+</div>
+</section>
+<!-- ABDM Health Record Consent Audit Badge -->
+<footer class="p-space-sm bg-surface-container-low rounded-xl flex items-center gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0">verified_user</span>
+<p class="font-label-sm text-label-sm flex-1 leading-snug">
+      Session encrypted under Ayushman Bharat Digital Mission (ABDM) guidelines. Explicit e-consent active for Dr. Soundarya Ramesh (Valid for 24h).
+    </p>
+</footer>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(11,28,48,0.06)]" data-active-classes="text-primary font-bold"><div class="grid grid-cols-4 items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 h-full rounded-xl text-on-surface-variant transition-colors hover:text-on-surface active:bg-surface-container/50" data-path="home-auth" href="#"><span class="material-symbols-outlined text-[24px]">female</span><span class="font-label-sm text-label-sm text-center leading-tight truncate px-1">Home</span></a><a class="flex flex-col items-center justify-center gap-0.5 h-full rounded-xl text-on-surface-variant transition-colors hover:text-on-surface active:bg-surface-container/50" data-path="lifespan-dashboard" href="#"><span class="material-symbols-outlined text-[24px]">vital_signs</span><span class="font-label-sm text-label-sm text-center leading-tight truncate px-1">Dashboard</span></a><a class="flex flex-col items-center justify-center gap-0.5 h-full rounded-xl text-on-surface-variant transition-colors hover:text-on-surface active:bg-surface-container/50" data-path="emergency-triage" href="#"><span class="material-symbols-outlined text-[24px]">emergency</span><span class="font-label-sm text-label-sm text-center leading-tight truncate px-1">Triage</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 h-full rounded-xl transition-colors active:bg-surface-container/50 text-primary font-bold" data-path="clinical-portal" href="#"><span class="material-symbols-outlined text-[24px]">medical_services</span><span class="font-label-sm text-label-sm text-center leading-tight truncate px-1">Portal</span></a></div></nav></body></html>

@@ -1,0 +1,29 @@
+{
+  "entities": {
+    "users": {
+      "path": "users/{userId}",
+      "fields": {
+        "userId": { "type": "string" },
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string" },
+        "kicksCount": { "type": "number" },
+        "waterIntake": { "type": "number" },
+        "ifaDoseTaken": { "type": "boolean" },
+        "lastUpdated": { "type": "timestamp" }
+      }
+    },
+    "triage_assessments": {
+      "path": "triage_assessments/{docId}",
+      "fields": {
+        "userId": { "type": "string" },
+        "symptoms": { "type": "string" },
+        "severity": { "type": "string" },
+        "simple_summary": { "type": "string" },
+        "hospital_action": { "type": "string" },
+        "recommended_doctor": { "type": "string" },
+        "timestamp": { "type": "timestamp" }
+      }
+    }
+  }
+}
